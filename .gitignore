@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+public/
+.vscode/
+.DS_Store
+dev.md
+external/思灵机器人工业版API手册(C&C++版)_V3.3.0_20260205.pdf

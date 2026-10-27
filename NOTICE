@@ -1,0 +1,20 @@
+Diana Developer Documentation
+Copyright 2026 Agile Robots SE
+
+This product includes material adapted from the following third-party works,
+each licensed under the Apache License, Version 2.0:
+
+  libfranka
+  Copyright (c) 2023 Franka Robotics GmbH
+  https://github.com/frankaemika/libfranka
+  Used in: the FCI chapter (descriptions and code excerpts of the FCI examples,
+  adapted for Diana robots).
+
+  franka_ros2
+  Copyright (c) 2023 Franka Robotics GmbH
+  https://github.com/frankarobotics/franka_ros2
+  Used in: the ROS 2 chapter (descriptions and code excerpts of diana_ros2, whose
+  source follows the structure of franka_ros2 and carries the Franka Robotics
+  copyright notice).
+
+Modifications: Copyright (c) 2026 Agile Robots SE (adapted for Diana robots).

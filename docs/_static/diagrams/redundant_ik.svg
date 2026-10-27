@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 520" role="img" aria-labelledby="title desc">
+  <title id="title">同一 TCP 位姿对应多个冗余构型</title>
+  <desc id="desc">同一个目标 TCP 位姿可以对应多个不同关节构型，开发者需要结合参考构型、关节限位、奇异性和碰撞风险选择合适逆解。</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfdff; }
+      .panel { fill: #ffffff; stroke: #cfd8e3; stroke-width: 1.4; }
+      .target { stroke: #2f80ed; }
+      .s1 { stroke: #3b9b35; }
+      .s2 { stroke: #2d8acb; }
+      .s3 { stroke: #d9822b; }
+      .s4 { stroke: #8e5ab7; }
+      .muted { fill: #5d6b7a; }
+      .label { fill: #1f2937; font-family: "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; font-size: 18px; font-weight: 700; }
+      .small { fill: #374151; font-family: "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; font-size: 14px; }
+      .tiny { fill: #4b5563; font-family: "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; font-size: 12px; }
+      .joint { fill: #fff; stroke-width: 4; }
+      .arm { fill: none; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+      .ghost { stroke: #d5dde8; stroke-width: 1; }
+      .axis-x { stroke: #e3342f; }
+      .axis-y { stroke: #279a41; }
+      .axis-z { stroke: #1f6feb; }
+    </style>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2f80ed"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1180" height="520" rx="18"/>
+  <text class="label" x="28" y="42">同一 TCP 位姿对应多个冗余构型（Redundant IK）</text>
+  <text class="small" x="28" y="72">同一个 TCP 位姿可以到达相同的位置和姿态，但肘部、肩部、腕部等关节构型不同。</text>
+  <text class="small" x="28" y="96">应结合当前关节状态、关节限位、奇异性、碰撞风险和代价函数，从候选解中选择最适合运动规划的一组。</text>
+
+  <rect class="panel" x="28" y="126" width="230" height="282" rx="10"/>
+  <text class="label" x="74" y="158">目标 TCP 位姿</text>
+  <g transform="translate(74 205)">
+    <path class="ghost" d="M-22 72 L92 30 L166 64"/>
+    <path class="ghost" d="M-22 44 L92 2 L166 36"/>
+    <path class="ghost" d="M-22 16 L92 -26 L166 8"/>
+    <ellipse cx="66" cy="54" rx="34" ry="18" fill="#eef2f7" stroke="#9aa8b7"/>
+    <rect x="48" y="28" width="40" height="42" rx="8" fill="#d6dde6" stroke="#64748b"/>
+    <circle cx="68" cy="28" r="18" fill="#f8fafc" stroke="#64748b" stroke-width="3"/>
+    <path d="M68 28 L114 28" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+    <path class="axis-x" d="M68 28 L106 58" stroke-width="4" marker-end="url(#arrowGray)"/>
+    <path class="axis-y" d="M68 28 L116 4" stroke-width="4" marker-end="url(#arrowGray)"/>
+    <path class="axis-z" d="M68 28 L68 -34" stroke-width="4" marker-end="url(#arrowGray)"/>
+    <text class="small" x="113" y="64" fill="#e3342f">X</text>
+    <text class="small" x="120" y="2" fill="#279a41">Y</text>
+    <text class="small" x="72" y="-38" fill="#1f6feb">Z</text>
+    <text class="small" x="78" y="20" fill="#1f6feb">TCP</text>
+  </g>
+  <text class="tiny" x="50" y="348">位置示例：(500, 200, 400) mm</text>
+  <text class="tiny" x="50" y="374">姿态示例：轴角 / RPY / 四元数等</text>
+
+  <path d="M270 268 H325" stroke="#2f80ed" stroke-width="18" marker-end="url(#arrowBlue)" opacity=".8"/>
+
+  <rect class="panel" x="342" y="126" width="810" height="282" rx="10"/>
+  <text class="label" x="680" y="158">候选逆解：多个不同构型</text>
+
+  <g transform="translate(380 182)">
+    <rect x="0" y="0" width="170" height="196" rx="8" fill="#f7fff5" stroke="#91c987"/>
+    <text class="small" x="42" y="30" fill="#2b8a28">解 1：肘部上抬</text>
+    <path class="arm s1" d="M50 146 L50 105 L78 70 L122 50 L142 80"/>
+    <circle class="joint s1" cx="50" cy="146" r="13"/>
+    <circle class="joint s1" cx="50" cy="105" r="13"/>
+    <circle class="joint s1" cx="78" cy="70" r="13"/>
+    <circle class="joint s1" cx="122" cy="50" r="13"/>
+    <circle class="joint s1" cx="142" cy="80" r="10"/>
+    <text class="tiny" x="18" y="174">特点：肘部上抬，躯干较直</text>
+  </g>
+
+  <g transform="translate(575 182)">
+    <rect x="0" y="0" width="170" height="196" rx="8" fill="#f4fbff" stroke="#85bce5"/>
+    <text class="small" x="42" y="30" fill="#1671b7">解 2：肘部下垂</text>
+    <path class="arm s2" d="M50 146 L48 105 L72 120 L116 86 L142 80"/>
+    <circle class="joint s2" cx="50" cy="146" r="13"/>
+    <circle class="joint s2" cx="48" cy="105" r="13"/>
+    <circle class="joint s2" cx="72" cy="120" r="13"/>
+    <circle class="joint s2" cx="116" cy="86" r="13"/>
+    <circle class="joint s2" cx="142" cy="80" r="10"/>
+    <text class="tiny" x="18" y="174">特点：肘部下垂，避让上方空间</text>
+  </g>
+
+  <g transform="translate(770 182)">
+    <rect x="0" y="0" width="170" height="196" rx="8" fill="#fffaf2" stroke="#e6b36f"/>
+    <text class="small" x="42" y="30" fill="#c66a1a">解 3：肩部外展</text>
+    <path class="arm s3" d="M50 146 L32 105 L52 70 L102 50 L142 80"/>
+    <circle class="joint s3" cx="50" cy="146" r="13"/>
+    <circle class="joint s3" cx="32" cy="105" r="13"/>
+    <circle class="joint s3" cx="52" cy="70" r="13"/>
+    <circle class="joint s3" cx="102" cy="50" r="13"/>
+    <circle class="joint s3" cx="142" cy="80" r="10"/>
+    <text class="tiny" x="18" y="174">特点：侧向展开，避让侧面干涉</text>
+  </g>
+
+  <g transform="translate(965 182)">
+    <rect x="0" y="0" width="170" height="196" rx="8" fill="#fbf7ff" stroke="#be95df"/>
+    <text class="small" x="42" y="30" fill="#7a3daf">解 4：腕部翻转</text>
+    <path class="arm s4" d="M50 146 L50 105 L78 70 L118 76 L142 80"/>
+    <circle class="joint s4" cx="50" cy="146" r="13"/>
+    <circle class="joint s4" cx="50" cy="105" r="13"/>
+    <circle class="joint s4" cx="78" cy="70" r="13"/>
+    <circle class="joint s4" cx="118" cy="76" r="13"/>
+    <circle class="joint s4" cx="142" cy="80" r="10"/>
+    <text class="tiny" x="18" y="174">特点：末端姿态相同，腕部构型不同</text>
+  </g>
+
+  <text class="small" x="392" y="438">使用思路：获取候选逆解后，结合参考构型、关节限位、奇异性、碰撞风险和路径连续性筛选。</text>
+  <text class="tiny" x="392" y="466">注：图中机械臂为示意，具体解数量和构型以实际机型、约束条件和 SDK 返回结果为准。</text>
+</svg>

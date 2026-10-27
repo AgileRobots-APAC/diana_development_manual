@@ -1,0 +1,6 @@
+sphinx
+sphinx-rtd-theme
+myst-parser
+sphinx-copybutton
+sphinx-design
+jieba>=0.42.1

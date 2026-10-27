@@ -1,0 +1,29 @@
+default:
+  image: diana-docs-ci:1.0
+  tags:
+    - diana-docker
+
+stages:
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  # 历史文档版本由 tag 构建，必须能检出所有已登记的发布 tag。
+  GIT_DEPTH: "0"
+
+pages:
+  stage: deploy
+  script:
+    - python3 -m pip install --disable-pip-version-check -r requirements.txt
+    - python3 scripts/check_bilingual.py
+    - python3 scripts/build_versioned_site.py
+    - test -s public/index.html
+    - test -s public/en/index.html
+    - echo "===== public ====="
+    - ls -lah public
+    - echo "CI_PAGES_URL=$CI_PAGES_URL"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'

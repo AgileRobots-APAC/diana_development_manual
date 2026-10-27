@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "versions": [
+    {
+      "id": "development",
+      "label": "1.0.0",
+      "ref": "main",
+      "path": "",
+      "status": "development",
+      "published": true
+    }
+  ]
+}
