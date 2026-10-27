@@ -11,7 +11,7 @@ All examples have been verified on real robots; the "Execution Results" section 
 | Git repository | [diana_examples_python](https://github.com/AgileRobots-APAC/diana_examples_python.git) |
 | SDK repository | [diana_sdk_python](https://github.com/AgileRobots-APAC/diana_sdk_python.git) |
 | Example license | MIT License |
-| Examples version | 1.0.0 (compatible with SDK 3.3.0) |
+| Examples version | 1.0.0 (compatible with SDK 3.3.0 and 3.4.0; bundles SDK 3.3.0) |
 | SDK location | `third_party/diana_sdk_python/` |
 | SDK wrapper | `third_party/diana_sdk_python/lib/DianaApi.py` |
 | Run command | `python3 examples/<name>/main.py` |

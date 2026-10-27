@@ -4,7 +4,7 @@ This chapter is for engineers developing control-PC applications with the Diana 
 
 ## Release baseline
 
-The manual is based on Industrial API Manual **V3.3.0**. Record all of the following when diagnosing an issue or releasing an application, so that one document is not used to explain the behavior of a different binary release:
+The manual is based on Industrial API Manual **V3.4.0**. Record all of the following when diagnosing an issue or releasing an application, so that one document is not used to explain the behavior of a different binary release:
 
 ::::{div} release-baseline-chain
 :::{div} release-baseline-step
@@ -29,11 +29,15 @@ Function parameters, limits, and availability may change between SDK releases. A
 
 The current SDK's `version` file records the release version; at runtime, `getLibraryVersion()` reads the library version. Save both values when releasing or troubleshooting.
 
-When this manual was checked, the SDK `version` file contained `industry-v3.3.0.260211`, which identifies the baseline; use the SDK, API manual, and release notes installed at the customer site for actual integration.
+When this manual was checked, the SDK `version` file contained `industry-v3.4.0.260605`, which identifies the baseline; use the SDK, API manual, and release notes installed at the customer site for actual integration.
 
 The shared libraries bundled in the repository target Linux x86_64. Linux aarch64 or Windows users must use a complete SDK package delivered for the control PC's operating system and architecture.
 
 ## Interface revision summary
+
+### SDK V3.4
+
+- Added `addTcpPose`, `setTcpPoseByTcpName`, `deleteTcpPoseByTcpName`, and `switchTcpPoseByTcpName` to manage tool coordinate systems by tool name.
 
 ### SDK V3.3
 

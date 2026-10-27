@@ -3,7 +3,7 @@
 The example repository contains runnable C++ reference projects. It calls the Diana API directly; common code only handles argument parsing, callbacks, waiting, logging, and model validation, and does not wrap the SDK.
 
 ```{note}
-Each example page summarizes the relevant guidance from the Industrial Diana API Manual for C/C++ V3.3.0. Function signatures, availability, and behavior are ultimately defined by the current SDK headers, release notes, and example source.
+Each example page summarizes the relevant guidance from the Industrial Diana API Manual for C/C++ V3.4.0. Function signatures, availability, and behavior are ultimately defined by the current SDK headers, release notes, and example source.
 ```
 
 | Item | Value |
@@ -11,7 +11,7 @@ Each example page summarizes the relevant guidance from the Industrial Diana API
 | Git repository | [diana_examples_cpp](https://github.com/AgileRobots-APAC/diana_examples_cpp.git) |
 | SDK repository | [diana_sdk_cpp](https://github.com/AgileRobots-APAC/diana_sdk_cpp.git) |
 | Example license | MIT License |
-| Examples version | 1.0.0 (compatible with SDK 3.3.0) |
+| Examples version | 1.0.0 (compatible with SDK 3.3.0 and 3.4.0; bundles SDK 3.3.0) |
 | SDK location | `third_party/diana_sdk_cpp/` |
 | Build system | CMake 3.10+, C++11 |
 | Output directory | `build/bin/` |

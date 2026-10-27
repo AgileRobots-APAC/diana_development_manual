@@ -39,7 +39,7 @@ def main() -> None:
     OUTPUT.write_text(
         GENERATED_NOTICE + """# 错误码
 
-本页从 V3.3.0 手册附件 A 的错误码表结构化整理，共 **%d** 条。
+本页从 V3.3.0 手册附件 A 的错误码表结构化整理，共 **%d** 条。V3.4.0 手册的附件 A 内容相同，表中的手册页码为 V3.3.0 手册的页码，在 V3.4.0 手册中整体后移 2 页。
 
 诊断流程请参见[故障排查](troubleshooting.md)。其中，`ERROR_CODE_JOINT_REGIST_ERROR (-2001)` 和 `ERROR_CODE_NOT_ALL_AT_OP_STATE (-2205)` 按手册要求需调用 `holdBrake()` 合抱闸或重启硬件。
 
@@ -64,7 +64,7 @@ def main() -> None:
     EN_OUTPUT.write_text(
         GENERATED_NOTICE + """# Error Codes
 
-This searchable table contains all **%d** error-code entries from appendix A of the V3.3.0 manual. Error codes and macro names are language-independent. The descriptions retain the official Chinese source wording to avoid changing safety or recovery semantics without an SDK release-approved translation.
+This searchable table contains all **%d** error-code entries from appendix A of the V3.3.0 manual. Appendix A of the V3.4.0 manual is identical; the manual page numbers in the table are those of the V3.3.0 manual and are shifted back by 2 pages in the V3.4.0 manual. Error codes and macro names are language-independent. The descriptions retain the official Chinese source wording to avoid changing safety or recovery semantics without an SDK release-approved translation.
 
 For diagnostic workflow, see [Troubleshooting](troubleshooting.md). In particular, `ERROR_CODE_JOINT_REGIST_ERROR (-2001)` and `ERROR_CODE_NOT_ALL_AT_OP_STATE (-2205)` require `holdBrake()` or a hardware restart according to the manual.
 

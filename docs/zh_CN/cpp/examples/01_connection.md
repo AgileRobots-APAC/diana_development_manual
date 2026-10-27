@@ -130,7 +130,7 @@ Robot model mismatch: selected Diana7 expects 7 axes, but the connected robot re
 ::::
 ## 逐项 API 用法与调用案例
 
-以下说明以《思灵机器人工业版 API 手册（C/C++ 版）V3.3.0》为准。
+以下说明以《思灵机器人工业版 API 手册（C/C++ 版）V3.4.0》为准。
 
 ### `initSrvNetInfo` / `initSrv` / `destroySrv`
 

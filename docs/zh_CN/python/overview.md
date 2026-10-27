@@ -4,7 +4,7 @@
 
 ## 发布基线
 
-当前 Python SDK 子模块内容为 **3.3.0**，随示例仓库放在：
+Python Example 1.0.0 内置的 Python SDK 子模块为 **3.3.0**，位置如下；使用 SDK 3.4.0 时，设置环境变量 `DIANA_SDK_DIR` 指向该 SDK 目录即可（见 Example 仓库 README）：
 
 ```text
 diana_examples_python/
@@ -44,6 +44,11 @@ diana_examples_python/
 当前 SDK 的 `version` 文件记录发布版本；运行时可使用 `getLibraryVersion()` 读取库版本。发布或排障时，建议保存这两项信息。
 
 ## 接口修订摘要
+
+### SDK V3.4
+
+- `DianaApi.py` 中新增 `addTcpPose`、`setTcpPoseByTcpName`、`deleteTcpPoseByTcpName`、`switchTcpPoseByTcpName`，按工具名称管理工具坐标系。
+- 手册中 `powerOn`、`powerOnConfirmation`、`powerOff` 的返回值说明更正为 `True`（成功）和 `False`（失败）。
 
 ### SDK V3.3
 

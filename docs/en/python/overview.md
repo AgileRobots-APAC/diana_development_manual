@@ -4,7 +4,7 @@
 
 ## Release Baseline
 
-The local Python SDK submodule currently contains version **3.3.0**:
+Python Examples 1.0.0 bundles Python SDK **3.3.0** as a submodule, laid out as below. To use SDK 3.4.0, set the `DIANA_SDK_DIR` environment variable to that SDK directory (see the README of the Example repository):
 
 ```text
 diana_examples_python/
@@ -44,6 +44,11 @@ Function parameters, limits, and availability may change between SDK releases. A
 The SDK `version` file records the package version, and `getLibraryVersion()` can read the runtime library version. Save both when releasing or troubleshooting applications.
 
 ## Interface Revision Summary
+
+### SDK V3.4
+
+- `DianaApi.py` adds `addTcpPose`, `setTcpPoseByTcpName`, `deleteTcpPoseByTcpName`, and `switchTcpPoseByTcpName` to manage tool coordinate systems by tool name.
+- The manual now describes the return values of `powerOn`, `powerOnConfirmation`, and `powerOff` as `True` (success) and `False` (failure).
 
 ### SDK V3.3
 

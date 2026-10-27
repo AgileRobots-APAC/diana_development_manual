@@ -3,7 +3,7 @@
 
 # Error Codes
 
-This searchable table contains all **176** error-code entries from appendix A of the V3.3.0 manual. Error codes and macro names are language-independent. The descriptions retain the official Chinese source wording to avoid changing safety or recovery semantics without an SDK release-approved translation.
+This searchable table contains all **176** error-code entries from appendix A of the V3.3.0 manual. Appendix A of the V3.4.0 manual is identical; the manual page numbers in the table are those of the V3.3.0 manual and are shifted back by 2 pages in the V3.4.0 manual. Error codes and macro names are language-independent. The descriptions retain the official Chinese source wording to avoid changing safety or recovery semantics without an SDK release-approved translation.
 
 For diagnostic workflow, see [Troubleshooting](troubleshooting.md). In particular, `ERROR_CODE_JOINT_REGIST_ERROR (-2001)` and `ERROR_CODE_NOT_ALL_AT_OP_STATE (-2205)` require `holdBrake()` or a hardware restart according to the manual.
 

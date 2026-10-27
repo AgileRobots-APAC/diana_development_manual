@@ -1,4 +1,4 @@
-# Diana 开发者文档 · 1.0.0
+# Diana 开发者文档 · 1.0.1
 
 [English](README.md) | [中文](README.cn.md)
 
@@ -6,10 +6,10 @@
 
 当前文档基线：
 
-- 《工业版 API 手册（C&C++ 版）》V3.3.0
-- Diana Python SDK 与 Python API 手册 V3.3.0
+- 《工业版 API 手册（C&C++ 版）》V3.4.0
+- Diana Python SDK 与 Python API 手册 V3.4.0
 - 基于 `libfranka 0.18.2` 的 Diana FCI 示例
-- 文档版本：1.0.0（依据 SDK 3.3.0）
+- 文档版本：1.0.1（依据 SDK 3.4.0；1.0.0 以 tag `v1.0.0` 保留，依据 SDK 3.3.0）
 - 结构化 API 记录：230
 
 ## 当前覆盖范围
@@ -22,7 +22,7 @@
 - 附件 A 错误码表已转为包含 176 条记录的可搜索网页表格。
 - 附录 B 逆解唯一性和附录 C 实时指令说明已整理为专题指南。
 - GitHub Pages 与 GitLab Pages CI 构建均已配置。
-- 版本下拉支持开发中版本和未来不可变 Git tag；当前尚未创建正式发布 tag。
+- 版本下拉支持开发中版本和已登记的不可变 Git tag。
 
 函数级 API Reference 由独立站点维护。本仓库只保留生成错误码表所需的结构化数据。
 
@@ -111,7 +111,7 @@ docs/zh_CN + docs/en -> Sphinx -> build/html/ 和 build/html/en/ -> GitHub Pages
 
 ## 文档版本发布
 
-当前默认分支代表 1.0.0 的开发中版本，依据 SDK 3.3.0。验证完成后，创建不可变发布 tag，并在 `data/versions.json` 中新增条目：
+当前默认分支代表 1.0.1 的开发中版本，依据 SDK 3.4.0。验证完成后，创建不可变发布 tag，并在 `data/versions.json` 中新增条目：
 
 ```json
 {

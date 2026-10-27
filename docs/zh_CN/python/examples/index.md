@@ -11,7 +11,7 @@ Example 仓库提供可运行的 Python 参考脚本。它尽量直接调用 Dia
 | Git 仓库 | [diana_examples_python](https://github.com/AgileRobots-APAC/diana_examples_python.git) |
 | SDK 仓库 | [diana_sdk_python](https://github.com/AgileRobots-APAC/diana_sdk_python.git) |
 | Example 许可证 | MIT License |
-| Example 版本 | 1.0.0（适配 SDK 3.3.0） |
+| Example 版本 | 1.0.0（兼容 SDK 3.3.0 与 3.4.0；内置 SDK 3.3.0） |
 | SDK 位置 | `third_party/diana_sdk_python/` |
 | SDK wrapper | `third_party/diana_sdk_python/lib/DianaApi.py` |
 | 运行方式 | `python3 examples/<name>/main.py` |

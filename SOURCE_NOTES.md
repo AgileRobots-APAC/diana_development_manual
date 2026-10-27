@@ -8,10 +8,10 @@ This file records the source baseline and evidence boundaries used by the Diana 
 
 Industrial API Manual for C/C++:
 
-- Software version: V3.3.0
-- Document version: V3.3.0
-- File date: 2026-02-05
-- Original function entries: 1-230
+- Software version: V3.4.0
+- Document version: V3.4.0
+- File date: 2026-05-28
+- Original function entries: 1-234
 - Appendix A: DianaApi error codes
 - Appendix B: ensuring inverse-kinematics solution uniqueness
 - Appendix C: additional notes for realtime commands
@@ -20,8 +20,8 @@ The C++ example guides are also checked against the matching SDK headers, releas
 
 ## Python SDK Primary Sources
 
-- Diana Industrial API Manual for Python V3.3.0, dated 2026-02-05
-- Python SDK version `industry-v3.3.0.260211`
+- Diana Industrial API Manual for Python V3.4.0, dated 2026-05-28
+- Python SDK version `industry-v3.4.0.260605`
 - `lib/DianaApi.py` and the `version` file in the Python SDK submodule
 - Current `diana-api-examples-python` source and accompanying documentation
 

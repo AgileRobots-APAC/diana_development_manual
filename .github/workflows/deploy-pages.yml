@@ -38,6 +38,9 @@ jobs:
         run: python scripts/check_bilingual.py
 
       - name: Build bilingual documentation
+        # The Jazzy chapter is not released yet: hide it from every version. Remove this line to publish it.
+        env:
+          DIANA_BUILD_ROS2_JAZZY: "0"
         run: python scripts/build_versioned_site.py
 
       - name: Configure GitHub Pages

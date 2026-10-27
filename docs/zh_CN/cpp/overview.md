@@ -4,7 +4,7 @@
 
 ## 发布基线
 
-当前手册内容基于工业版 API 手册 **V3.3.0**。排查问题或发布应用时，应同时记录以下版本，避免用一份文档去解释另一版二进制库的行为：
+当前手册内容基于工业版 API 手册 **V3.4.0**。排查问题或发布应用时，应同时记录以下版本，避免用一份文档去解释另一版二进制库的行为：
 
 ::::{div} release-baseline-chain
 :::{div} release-baseline-step
@@ -29,11 +29,15 @@
 
 当前 SDK 的 `version` 文件记录发布版本；运行时可使用 `getLibraryVersion()` 读取库版本。发布或排障时，建议保存这两项信息。
 
-本手册核对时的 SDK `version` 文件内容为 `industry-v3.3.0.260211`，用于标识基线；实际集成仍以客户现场安装的 SDK、API 手册和发布说明为准。
+本手册核对时的 SDK `version` 文件内容为 `industry-v3.4.0.260605`，用于标识基线；实际集成仍以客户现场安装的 SDK、API 手册和发布说明为准。
 
 仓库内附带的动态库为 Linux x86_64 版本。Linux aarch64 或 Windows 用户应使用随设备交付、且与控制 PC 系统和架构匹配的完整 SDK 包。
 
 ## 接口修订摘要
+
+### SDK V3.4
+
+- 新增 `addTcpPose`、`setTcpPoseByTcpName`、`deleteTcpPoseByTcpName`、`switchTcpPoseByTcpName`，按工具名称管理工具坐标系。
 
 ### SDK V3.3
 

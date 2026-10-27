@@ -234,3 +234,21 @@ homogeneous2Pose(matrix, pose_again);
 ```
 
 ````
+
+### SDK V3.4 新增的工具坐标系接口
+
+本示例没有使用下面四个接口，它们自 SDK V3.4 起提供，用于按工具名称管理工具坐标系。`arrPose` 是 TCP 相对于末端法兰的位姿，长度为 6：前三个为位置 XYZ（单位 m），后三个为轴角 RxRyRz（单位 rad）；工具名称需为 UTF-8 编码，长度不超过 255 个字符。
+
+| 接口 | 作用 |
+|---|---|
+| `addTcpPose(strToolName, arrPose, strIpAddress)` | 新增工具坐标系 |
+| `setTcpPoseByTcpName(strToolName, arrPose, strIpAddress)` | 修改指定名称的工具坐标系 |
+| `deleteTcpPoseByTcpName(strToolName, strIpAddress)` | 删除指定名称的工具坐标系 |
+| `switchTcpPoseByTcpName(strToolName, strIpAddress)` | 切换到指定名称的工具坐标系，使其成为默认生效的工具坐标系 |
+
+返回值：`0` 表示成功，`-1` 表示失败。使用时请注意：
+
+- 系统默认的 `Flange` 坐标系在任何情况下都不支持修改，也不支持删除。
+- 修改或删除工具坐标系后，在该坐标系下设置的路点都会受到影响，请酌情使用。
+- 修改的是当前生效的坐标系时，客户端修改值的生效有一个推送周期的延迟，需要等待一个推送周期，再使用 `forward`、`inverse` 等依赖最新工具坐标系的函数。
+- 在阻抗模式下，如果修改的工具坐标系为默认工具坐标系，将返回失败。

@@ -16,17 +16,25 @@
 
 | 手册 | C++ Example | Python Example | SDK | FCI / ROS 2 基线 |
 |---|---|---|---|---|
+| 1.0.1 | 1.0.0 | 1.0.0 | 3.4.0 | `diana_libfranka_overlay` 1.0.0（`libfranka 0.18.2`）；`diana_ros2` Humble |
 | 1.0.0 | 1.0.0 | 1.0.0 | 3.3.0 | `diana_libfranka_overlay` 1.0.0（`libfranka 0.18.2`）；`diana_ros2` Humble |
 
 软件版本（SDK 3.3.0、3.4.0 等）的每次发布，除 SDK 外还包含与之配套的 libfranka 补丁。`diana_libfranka_overlay` 1.0.0 是软件版本 3.3.0 对应的 `libfranka 0.18.2` 补丁，按机型分支提供，对应 tag 为 `v1.0.0-libfranka0.18.2-diana3`、`v1.0.0-libfranka0.18.2-diana7`、`v1.0.0-libfranka0.18.2-diana7g2`。
+
+手册 1.0.0 依据 SDK 3.3.0 的 API 手册，手册 1.0.1 依据 SDK 3.4.0 的 API 手册；1.0.0 以 Git tag 保留，1.0.1 为当前开发版，可在版本下拉中切换。Example 1.0.0 内置的 SDK 子模块为 3.3.0。核对 SDK 3.4.0 时，Example 使用的接口没有变化（3.4.0 只新增了四个工具坐标系接口，Python wrapper 中的其他改动不影响示例），因此 1.0.0 也可用于 SDK 3.4.0，使用时通过 `DIANA_SDK_DIR` 指定 SDK 目录。
 
 SDK 发布新版本而 Example 无需修改时，只在本表追加该 SDK 版本并发布手册修订版，不需要同步修改 Example 的版本号。
 
 ## 更新记录
 
+### 1.0.1
+
+- 更新为依据 SDK 3.4.0 的 API 手册，与 3.3.0 相比的变化见各 SDK 概述中的接口修订摘要。
+- 新增四个工具坐标系接口的说明，Example 1.0.0 经核对可用于 SDK 3.4.0。
+
 ### 1.0.0
 
-- 手册使用独立于 SDK 的版本号；当前内容依据 SDK 3.3.0 的 API 手册。
+- 手册使用独立于 SDK 的版本号；内容依据 SDK 3.3.0 的 API 手册。
 - 统一中文、英文、C++、Python、FCI 与 ROS 2 文档入口。
 
 ### 1.0.0 之前

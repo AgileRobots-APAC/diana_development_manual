@@ -20,7 +20,7 @@ Before the first program run, after changing a tool or payload, or after redeplo
 This is a minimum software-integration check, not a complete risk assessment or acceptance checklist. Installation strength, stopping distance, protective devices, and environmental requirements are governed by the applicable model manual and site safety plan.
 ```
 
-Safety-related software entry points that can be found directly in the V3.3.0 API manual include:
+Safety-related software entry points that can be found directly in the V3.4.0 API manual include:
 
 - Collision detection and thresholds
 - Rescue mode

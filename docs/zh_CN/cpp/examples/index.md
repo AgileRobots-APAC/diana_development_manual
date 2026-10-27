@@ -3,7 +3,7 @@
 Example 仓库提供可运行的 C++ 参考工程。它尽量直接调用 Diana API；公共代码只负责参数解析、回调、等待、日志和型号校验，不对 SDK 进行二次封装。
 
 ```{note}
-各逐例页面还整理了《思灵机器人工业版 API 手册（C/C++ 版）V3.3.0》中与该示例相关的接口使用要点。函数签名、可用性和行为仍以当前 SDK 的头文件、发布说明和本 Example 源码为准。
+各逐例页面还整理了《思灵机器人工业版 API 手册（C/C++ 版）V3.4.0》中与该示例相关的接口使用要点。函数签名、可用性和行为仍以当前 SDK 的头文件、发布说明和本 Example 源码为准。
 ```
 
 | 项目 | 内容 |
@@ -11,7 +11,7 @@ Example 仓库提供可运行的 C++ 参考工程。它尽量直接调用 Diana 
 | Git 仓库 | [diana_examples_cpp](https://github.com/AgileRobots-APAC/diana_examples_cpp.git) |
 | SDK 仓库 | [diana_sdk_cpp](https://github.com/AgileRobots-APAC/diana_sdk_cpp.git) |
 | Example 许可证 | MIT License |
-| Example 版本 | 1.0.0（适配 SDK 3.3.0） |
+| Example 版本 | 1.0.0（兼容 SDK 3.3.0 与 3.4.0；内置 SDK 3.3.0） |
 | SDK 位置 | `third_party/diana_sdk_cpp/` |
 | 构建系统 | CMake 3.10 及以上，C++11 |
 | 输出目录 | `build/bin/` |

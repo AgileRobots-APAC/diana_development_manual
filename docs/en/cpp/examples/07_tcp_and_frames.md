@@ -236,3 +236,21 @@ homogeneous2Pose(matrix, pose_again);
 ```
 
 ````
+
+### Tool coordinate system functions added in SDK V3.4
+
+This example does not use the four functions below. They are available since SDK V3.4 and manage tool coordinate systems by tool name. `arrPose` is the pose of the TCP relative to the end flange, with 6 elements: the first three are the position XYZ (m) and the last three are the axis-angle RxRyRz (rad). The tool name must be UTF-8 encoded and at most 255 characters long.
+
+| Function | Purpose |
+|---|---|
+| `addTcpPose(strToolName, arrPose, strIpAddress)` | Add a tool coordinate system |
+| `setTcpPoseByTcpName(strToolName, arrPose, strIpAddress)` | Modify the tool coordinate system with the given name |
+| `deleteTcpPoseByTcpName(strToolName, strIpAddress)` | Delete the tool coordinate system with the given name |
+| `switchTcpPoseByTcpName(strToolName, strIpAddress)` | Switch to the tool coordinate system with the given name, making it the default active one |
+
+Return value: `0` means success and `-1` means failure. Note the following:
+
+- The default `Flange` coordinate system cannot be modified or deleted under any circumstances.
+- After a tool coordinate system is modified or deleted, the waypoints set in it are affected; use these functions with care.
+- When the modified coordinate system is the active one, the new value takes effect on the client after one push cycle. Wait one push cycle before calling functions that depend on the latest tool coordinate system, such as `forward` and `inverse`.
+- In impedance mode, modifying the default tool coordinate system returns failure.

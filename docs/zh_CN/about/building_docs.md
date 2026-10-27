@@ -76,6 +76,8 @@ python3 scripts/build_versioned_site.py
 
 两套配置可以同时保留。GitHub 不会执行 `.gitlab-ci.yml`，GitLab 也不会执行 `.github/workflows/`，因此同一份提交可安全推送到两个平台。
 
+版本站点构建完成后，`scripts/dedupe_static.py` 会让英文站点共用中文站点中完全相同的静态文件和图片（`_static`、`_images`），以减小发布体积。本地 `make html` 的输出不做这一步。
+
 发布正式版本的步骤：
 
 1. 内容验证完成后，创建以 `v` 开头的 Git tag，例如 `v1.0.0`。已发布的 tag 不要移动；内容修订时创建 `v1.0.1` 这样的补丁版本。

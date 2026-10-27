@@ -76,6 +76,8 @@ The final publication directory is `public/`: the development version sits at th
 
 Both configurations can remain in the repository. GitHub ignores `.gitlab-ci.yml`, while GitLab ignores `.github/workflows/`, so the same commit can be pushed safely to both platforms.
 
+After the versioned site is built, `scripts/dedupe_static.py` lets the English site share the byte-identical static files and images (`_static`, `_images`) of the Chinese site, which reduces the published size. The output of a local `make html` is not changed by this step.
+
 To publish a release:
 
 1. After the content is verified, create a Git tag that starts with `v`, for example `v1.0.0`. Do not move a published tag; for content fixes create a patch version such as `v1.0.1`.

@@ -23,5 +23,5 @@ For controller configurations that support it, the COM wiring determines whether
 4. For mappings that must not change during operation, use controller-supported locking or prohibit changes in the application layer.
 
 ```{note}
-Controller terminal definitions, electrical parameters, and PNP/NPN wiring are hardware information outside the main scope of this V3.3.0 API manual. The published site should bring them in separately from the controller user manual rather than mixing API semantics and hardware wiring on one page.
+Controller terminal definitions, electrical parameters, and PNP/NPN wiring are hardware information outside the main scope of this V3.4.0 API manual. The published site should bring them in separately from the controller user manual rather than mixing API semantics and hardware wiring on one page.
 ```

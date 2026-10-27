@@ -132,7 +132,7 @@ Robot model mismatch: selected Diana7 expects 7 axes, but the connected robot re
 
 ## API Usage and Call Examples
 
-The notes below follow the Industrial Diana API Manual for C/C++ V3.3.0.
+The notes below follow the Industrial Diana API Manual for C/C++ V3.4.0.
 
 ### `initSrvNetInfo` / `initSrv` / `destroySrv`
 

@@ -34,5 +34,5 @@ Errors from `-6001` onward describe position deviation, discontinuous velocity /
 For real-time issues, also record the actual and worst-case call period, CPU load, network jitter, whether the target points are continuous, and the stop strategy used after an interruption. First validate stability with reduced speed, acceleration, and update rate, then increase gradually toward the process parameters.
 
 ```{important}
-The V3.3.0 manual gives special clearing procedures for `-2001` and `-2205` that differ from ordinary errors. When either occurs, first read the manual notes in the full [Error Codes](error_codes.md) entry instead of only clearing the error repeatedly.
+The V3.4.0 manual gives special clearing procedures for `-2001` and `-2205` that differ from ordinary errors. When either occurs, first read the manual notes in the full [Error Codes](error_codes.md) entry instead of only clearing the error repeatedly.
 ```

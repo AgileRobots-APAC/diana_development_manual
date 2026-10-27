@@ -6,12 +6,12 @@ This documentation is for developers integrating, debugging, or maintaining Dian
 
 | Item | Value |
 |---|---|
-| C++ SDK | Industrial API Manual for C/C++ V3.3.0, original function entries 1-230 |
-| Python SDK | Diana Industrial API Manual for Python V3.3.0 (2026-02-05) and the Python SDK 3.3.0 wrapper |
+| C++ SDK | Industrial API Manual for C/C++ V3.4.0, original function entries 1-234 |
+| Python SDK | Diana Industrial API Manual for Python V3.4.0 (2026-05-28) and the Python SDK 3.4.0 wrapper |
 | FCI | Diana FCI example source and the `libfranka 0.18.2` API Reference |
 | ROS 2 | `diana_ros2` Humble source (metapackage 2.5.0), Jazzy source (metapackage 3.5.3), and `libfranka 0.18.2` |
-| Examples | C++ Examples 1.0.0 and Python Examples 1.0.0, compatible with SDK 3.3.0 |
-| Manual version | 1.0.0 (released) |
+| Examples | C++ Examples 1.0.0 and Python Examples 1.0.0, compatible with SDK 3.3.0 and 3.4.0 |
+| Manual version | 1.0.1 (in development) |
 | Formal release | Immutable Git tag |
 
 ## Content Sources
@@ -20,17 +20,17 @@ This documentation is for developers integrating, debugging, or maintaining Dian
 
 Industrial API Manual for C/C++:
 
-- Software version: V3.3.0
-- Document version: V3.3.0
-- File date: 2026-02-05
-- Original function entries: 1-230
+- Software version: V3.4.0
+- Document version: V3.4.0
+- File date: 2026-05-28
+- Original function entries: 1-234
 - Appendix A: DianaApi error codes
 - Appendix B: ensuring inverse-kinematics solution uniqueness
 - Appendix C: additional notes for realtime commands
 
 ### Python SDK Primary Sources
 
-- Diana Industrial API Manual for Python V3.3.0, dated 2026-02-05
+- Diana Industrial API Manual for Python V3.4.0, dated 2026-05-28
 - `lib/DianaApi.py` and the `version` file from the Python SDK submodule
 - The `diana_examples_python` source and its accompanying documentation
 

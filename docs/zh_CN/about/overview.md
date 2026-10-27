@@ -6,12 +6,12 @@
 
 | 项目 | 内容 |
 |---|---|
-| C++ SDK | 《工业版 API 手册（C/C++ 版）》V3.3.0，原手册函数序号 1-230 |
-| Python SDK | 《思灵机器人工业版 API 手册（Python 版）》V3.3.0（2026-02-05）及 Python SDK 3.3.0 wrapper |
+| C++ SDK | 《工业版 API 手册（C/C++ 版）》V3.4.0，原手册函数序号 1-234 |
+| Python SDK | 《思灵机器人工业版 API 手册（Python 版）》V3.4.0（2026-05-28）及 Python SDK 3.4.0 wrapper |
 | FCI | Diana FCI Example 源码及 `libfranka 0.18.2` API Reference |
 | ROS 2 | `diana_ros2` Humble 源码（元包 2.5.0）、Jazzy 源码（元包 3.5.3）及 `libfranka 0.18.2` |
-| Example | C++ Example 1.0.0、Python Example 1.0.0，适配 SDK 3.3.0 |
-| 本手册版本 | 1.0.0（已发布） |
+| Example | C++ Example 1.0.0、Python Example 1.0.0，兼容 SDK 3.3.0 与 3.4.0 |
+| 本手册版本 | 1.0.1（开发中） |
 | 正式发布方式 | 不可变 Git tag |
 
 ## 内容来源说明
@@ -20,17 +20,17 @@
 
 《工业版 API 手册（C/C++ 版）》：
 
-- 软件版本：V3.3.0
-- 文档版本：V3.3.0
-- 文件日期：2026-02-05
-- 原手册函数序号：1-230
+- 软件版本：V3.4.0
+- 文档版本：V3.4.0
+- 文件日期：2026-05-28
+- 原手册函数序号：1-234
 - 附件 A：DianaApi 接口错误码
 - 附录 B：如何确保运动学逆解唯一
 - 附录 C：对于实时指令的进一步说明
 
 ### Python SDK 主内容源
 
-- 《思灵机器人工业版 API 手册（Python 版）》V3.3.0，文件日期 2026-02-05
+- 《思灵机器人工业版 API 手册（Python 版）》V3.4.0，文件日期 2026-05-28
 - Python SDK 子模块中的 `lib/DianaApi.py` 和 `version` 文件
 - `diana_examples_python` 示例源码及其配套文档
 

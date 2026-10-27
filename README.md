@@ -1,4 +1,4 @@
-# Diana Developer Documentation · 1.0.0
+# Diana Developer Documentation · 1.0.1
 
 [English](README.md) | [中文](README.cn.md)
 
@@ -6,10 +6,10 @@ Bilingual **Sphinx + MyST + sphinx-rtd-theme** developer documentation for the D
 
 Documentation baseline:
 
-- Industrial API Manual for C/C++ V3.3.0
-- Diana Python SDK and API Manual V3.3.0
+- Industrial API Manual for C/C++ V3.4.0
+- Diana Python SDK and API Manual V3.4.0
 - Diana FCI examples using `libfranka 0.18.2`
-- Documentation version: 1.0.0 (based on SDK 3.3.0)
+- Documentation version: 1.0.1 (based on SDK 3.4.0; 1.0.0 is kept as tag `v1.0.0`, based on SDK 3.3.0)
 - Structured API records: 230
 
 ## Current Coverage
@@ -22,7 +22,7 @@ Documentation baseline:
 - Appendix A is a searchable table containing 176 error codes.
 - Appendix B inverse-kinematics uniqueness and Appendix C realtime commands are published as focused guides.
 - GitHub Pages and GitLab Pages CI builds are configured.
-- The version selector supports the development build and future immutable Git tags. No formal release tag has been created yet.
+- The version selector supports the development build and registered immutable Git tags.
 
 Function-level API Reference is maintained separately. This repository keeps only the structured data required to generate the error-code table.
 
@@ -111,7 +111,7 @@ docs/zh_CN + docs/en -> Sphinx -> build/html/ and build/html/en/ -> GitHub Pages
 
 ## Versioned Releases
 
-The default branch represents the development build of version 1.0.0, based on SDK 3.3.0. After validation, create an immutable release tag and add it to `data/versions.json`:
+The default branch represents the development build of version 1.0.1, based on SDK 3.4.0. After validation, create an immutable release tag and add it to `data/versions.json`:
 
 ```json
 {
