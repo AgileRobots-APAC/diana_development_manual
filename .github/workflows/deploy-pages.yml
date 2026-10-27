@@ -38,6 +38,13 @@ jobs:
       - name: Check bilingual page parity
         run: python scripts/check_bilingual.py
 
+      - name: Let git clone the private theme for every version build
+        # The versioned build checks out each release tag in its own worktree and
+        # clones the theme submodule again, so the token must apply to all clones.
+        env:
+          PRIVATE_THEME_TOKEN: ${{ secrets.PRIVATE_THEME_TOKEN }}
+        run: git config --global url."https://x-access-token:${PRIVATE_THEME_TOKEN}@github.com/".insteadOf "https://github.com/"
+
       - name: Build bilingual documentation
         # The Jazzy chapter is not released yet: hide it from every version. Remove this line to publish it.
         env:
