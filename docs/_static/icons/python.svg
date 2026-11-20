@@ -1,3 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Python">
-  <path fill="none" stroke="#e9edf0" stroke-linejoin="round" stroke-width="5" d="M32 6c-12 0-11 6-11 6v8h12v3H16C9 23 6 27 6 33s4 9 10 9h5v-7c0-6 5-10 11-10h11c6 0 9-4 9-10S46 6 32 6Zm-7 7h1m6 38c12 0 11-6 11-6v-8H31v-3h17c7 0 10-4 10-10s-4-9-10-9h-5v7c0 6-5 10-11 10H21c-6 0-9 4-9 10s6 9 20 9Zm7-7h1"/>
+  <defs>
+    <path id="py-half" d="M27 4h10a9 9 0 0 1 9 9v10a8 8 0 0 1-8 8H26a4 4 0 0 0-4 4v3h-8a9 9 0 0 1-9-9v-2a9 9 0 0 1 9-9h12v-7a9 9 0 0 1 1-1Z"/>
+    <mask id="py-eyes" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <circle cx="29" cy="11" r="2.600" fill="#000"/>
+      <circle cx="35" cy="53" r="2.600" fill="#000"/>
+    </mask>
+  </defs>
+  <g fill="#e9edf0" mask="url(#py-eyes)">
+    <use href="#py-half" transform="translate(0 -1)"/>
+    <use href="#py-half" transform="translate(0 1) rotate(180 32 32)"/>
+  </g>
 </svg>
