@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ROS 2 Humble">
-  <g fill="#e9edf0" transform="translate(-1 -1) scale(.78)"><circle cx="10" cy="10" r="5.500"/><circle cx="32" cy="10" r="4"/><circle cx="54" cy="10" r="5.500"/><circle cx="10" cy="32" r="4"/><circle cx="32" cy="32" r="5.500"/><circle cx="54" cy="32" r="4"/><circle cx="10" cy="54" r="5.500"/><circle cx="32" cy="54" r="4"/><circle cx="54" cy="54" r="5.500"/></g>
-  <circle cx="45" cy="45" r="17" fill="#e9edf0"/>
-  <g fill="none" stroke="#0b3a5c" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M38 36v18M52 36v18M38 45h14"/></g>
+  <g transform="translate(-1 -1) scale(.86)">
+    <path fill="none" stroke="#e9edf0" stroke-width="5" stroke-linejoin="round" d="M32 5 56 19v26L32 59 8 45V19z"/>
+    <text x="32" y="31" fill="#e9edf0" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">ROS</text>
+    <text x="32" y="48" fill="#e9edf0" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">2</text>
+  </g>
+  <circle cx="47" cy="47" r="16" fill="#1b2430"/>
+  <circle cx="47" cy="47" r="13.500" fill="#e9edf0"/>
+  <path fill="none" stroke="#0b3a5c" stroke-width="4.200" stroke-linecap="round" stroke-linejoin="round" d="M41 40v14M53 40v14M41 47h12"/>
 </svg>
